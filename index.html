@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Treinos</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Registro de Treino</h1>
+    <form id="treinoForm">
+      <label for="treino">Treino do Dia:</label>
+      <input type="text" id="treino" name="treino" required /><br /><br />
+
+      <label for="nome">Nome da Pessoa:</label>
+      <input type="text" id="nome" name="nome" required /><br /><br />
+
+      <div id="exerciciosContainer">
+        <label>Exercícios:</label>
+        <div class="exercicio">
+          <input
+            type="text"
+            name="exercicioNome"
+            placeholder="Nome do Exercício"
+            required
+          />
+          <input
+            type="number"
+            name="exercicioCarga"
+            placeholder="Carga (kg)"
+            required
+          />
+        </div>
+      </div>
+      <button type="button" id="addExercicio">Adicionar Exercício</button
+      ><br /><br />
+
+      <button type="submit">Salvar Treino</button>
+      <button type="button" id="exportTxt">Exportar TXT</button>
+    </form>
+
+    <div id="treinoResultado"></div>
+  </body>
+</html>

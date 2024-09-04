@@ -1,0 +1,75 @@
+body {
+    font-family: Roboto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.exercicio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.exercicio input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.removeExercicio {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.removeExercicio:hover {
+    background-color: #c82333;
+}
+
+#treinoResultado {
+    margin-top: 20px;
+    white-space: pre-wrap; /* Mantém a formatação de espaços e quebras de linha */
+    text-align: center;
+}
